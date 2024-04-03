@@ -18,7 +18,7 @@
    É dinheiro pra c******.
 
 ## Linguagem Utilizada:
-![Python](https://logowik.com/content/uploads/images/python.jpg = 300x300)
+![Python](https://logowik.com/content/uploads/images/python.jpg)
 
 
 ## Como funciona o código:
