@@ -23,7 +23,8 @@
 
 ## Como funciona o código:
   #### Arquivo megasena_classe.py
-  O usuário escolhe primeiramente quantos jogos da Mega ele quer que o código gere. Depois disso, o usuário deve fornecer manualmente como entrada a quantidade de números que CADA jogo deve ter.
+  O usuário escolhe primeiramente quantos jogos da Mega ele quer que o código gere. Depois disso, o usuário deve fornecer manualmente como entrada a quantidade de dezenas que CADA jogo deve ter.
+  Lembrando, o mínimo de dezenas na Mega Sena são 6. Portanto, caso peça um jogo de 5 ou menos números, o código levantará um erro, e você terá de recomeçar o processo.
   
   """python
   
