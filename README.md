@@ -1,4 +1,4 @@
-# Gerador de Números para a Mega Sena da Virada
+# Gerador de Jogos da Mega Sena
 ![Imagem de jogo físico da Mega](https://s2-g1.glbimg.com/HNy8l536EI7MfCIQSIAuv0v8RVI=/0x0:600x371/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/C/z/amTaqnTaydr4gig5wCyg/fta20181204045-b.jpg)
 
    O jogo da Mega Sena (no final do ano sendo a Mega Sena da Virada) é amplamente conhecido por todo o Brasil. Consiste numa aposta de 6 a 20 números, visando acertar os 6 (a sena) sorteados oficialmente.
