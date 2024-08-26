@@ -54,51 +54,56 @@ class MegaSena:
 
     def custo_jogo_mega(self, tamanho): # preço do jogo em relação ào _tamanho_ da aposta (quantidade de números)
         if tamanho == 6:
-            return "R$ 5,00"
+            return 5.00
         if tamanho == 7:
-            return "R$ 35,00"
+            return 35.00
         if tamanho == 8:
-            return "R$ 140,00"
+            return 140.00
         if tamanho == 9:
-            return "R$ 420,00"
+            return 420.00
         if tamanho == 10:
-            return "R$ 1.050,00"
+            return 1050.00
         if tamanho == 11:
-            return "R$ 2.310,00"
+            return 2310.00
         if tamanho == 12:
-            return "R$ 4.620,00"
+            return 4620.00
         if tamanho == 13:
-            return "R$ 8.580,00"
+            return 8580.00
         if tamanho == 14:
-            return "R$ 15.015,00"
+            return 15015.00
         if tamanho == 15:
-            return "R$ 25.035,00"
+            return 25035.00
         if tamanho == 16:
-            return "R$ 40.040,00"
+            return 40040.00
         if tamanho == 17:
-            return "R$ 61.880,00"
+            return 61880.00
         if tamanho == 18:
-            return "R$ 92.820,00"
+            return 92820.00
         if tamanho == 19:
-            return "R$ 135.600,00"
+            return 135600.00
         if tamanho == 20:
-            return "R$ 193.800,00"
+            return 193800.00
+        
+
+    def custo_total(self):
+        pass ## Como que eu esqueci disso????
         
 
     def gravar_jogos(self):
 
-        jogo = open("megasena_virada.txt", "a")
+        jogo = open("mega - teste.txt", "a")
         jogo.write("     Jogo para a Mega da Virada     \n")
         jogo.write("                 |                  \n")
         jogo.write("------------------------------------\n")
         jogo.write("    {}    ".format(sorted(self.numeros_a_jogar)) + "\n")
         jogo.write("------------------------------------\n")
+        jogo.write("- Valor total a pagar: R${}0 ------\n".format(self.custo_jogo_mega(len(self.numeros_a_jogar))))
         jogo.write("\n")
         jogo.close()
 
 
     def ler_jogos(self):
-        with open("megasena_virada.txt", "r") as arquivo:
+        with open("mega - teste.txt", "r") as arquivo:
             lista_jogos = arquivo.readlines()
         return lista_jogos
 
@@ -116,7 +121,7 @@ for _ in range(num_jogos):
     
     print(f"""
         Seu jogo da Mega está pronto! Aqui estão seus números : | {ms.mega_sena(qtd_numeros)} |
-        Sua aposta foi de {qtd_numeros} números e o total à pagar será de {ms.custo_jogo_mega(qtd_numeros)}.
+        Sua aposta foi de {qtd_numeros} números e o total à pagar será de R${ms.custo_jogo_mega(qtd_numeros):.2f}.
     """)
     print("\n")
 
